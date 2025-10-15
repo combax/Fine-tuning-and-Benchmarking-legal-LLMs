@@ -1,4 +1,4 @@
-# Fine-tuning and benchmarking legal LLM:
+# Fine-tuning and benchmarking legal LLMs:
 
 This repository contains code for:
 1. Fine-tuning Qwen2.5-3B with 4-bit QLoRA and full LoRA using Unsloth.
@@ -61,3 +61,4 @@ It has total of 163 tasks(162 automated, 1 manual), but according do the dataset
 - Base Models: **7B led in 6 tasks**
   -  (consumer_contracts_qa: 0.8637, contract_qa: 0.9744, hearsay: 0.6866, legal_reasoning_causality: 0.7695, personal_jurisdiction: 0.6305, proa: 0.9574)
   -  **QLoRA/LoRA excelled in specialized tasks** like contract_nli_* and ucc_v_common_law compared to 7B.
+
