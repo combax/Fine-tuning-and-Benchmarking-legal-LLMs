@@ -51,6 +51,8 @@ It has total of 163 tasks(162 automated, 1 manual), but according do the dataset
 
 ## Results:
 
+![results](/results.png)
+
 - QLoRA: **Outperformed base 3B in 10 tasks**
   - (contract_nli_confidentiality_of_agreement: 0.4268 vs. 0.0, contract_nli_permissible_copy: 0.50 vs. 0.0, contract_nli_return_of_confidential_information: 0.4007 vs. 0.0, contract_qa: 0.6329 vs. 0.0, cuad_third_party_beneficiary: 0.3824 vs. 0.0, hearsay: 0.6424 vs. 0.0782, jcrew_blocker: 0.4556 vs. 0.0, maud_pandemic_or_other_public_health_event__subject_to_disproportionate_impact_modifier: 0.3404 vs. 0.0, telemarketing_sales_rule: 0.6109 vs. 0.2566, ucc_v_common_law: 0.7037 vs. 0.0). 
   - Its 4-bit quantization and r=4 reduced overfitting, **beating LoRA in 11 tasks**.
@@ -61,4 +63,5 @@ It has total of 163 tasks(162 automated, 1 manual), but according do the dataset
 - Base Models: **7B led in 6 tasks**
   -  (consumer_contracts_qa: 0.8637, contract_qa: 0.9744, hearsay: 0.6866, legal_reasoning_causality: 0.7695, personal_jurisdiction: 0.6305, proa: 0.9574)
   -  **QLoRA/LoRA excelled in specialized tasks** like contract_nli_* and ucc_v_common_law compared to 7B.
+
 
