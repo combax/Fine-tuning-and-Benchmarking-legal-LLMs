@@ -64,5 +64,8 @@ It has total of 163 tasks(162 automated, 1 manual), but according do the dataset
   -  (consumer_contracts_qa: 0.8637, contract_qa: 0.9744, hearsay: 0.6866, legal_reasoning_causality: 0.7695, personal_jurisdiction: 0.6305, proa: 0.9574)
   -  **QLoRA/LoRA excelled in specialized tasks** like contract_nli (all 3), jcrew_blocker, muad (all 2) and ucc_v_common_law compared to 7B.
 
+---
+
+Furthermore, I plan to benchmark other fine-tuning techniques, effictive or not. For example: LoRA+, Delta-LoRA, VeRA, and many more. But scope isn't limited to PEFT methods, as other methods like adapter-based methods, prefix tuning, knowledge distillation, and layer freezing are also available.
 
 
