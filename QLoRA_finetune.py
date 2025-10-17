@@ -7,9 +7,9 @@ from unsloth import FastLanguageModel
 from trl import SFTTrainer
 
 #file paths
-MODEL_PATH = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\Qwen2.5-3B-Instruct"
-DATASET_PATH = r"G:\LLM-fine-tuning-LinkedIn-Post\legal_qa_full.csv"
-OUTPUT_PATH = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\QLoRA_model"
+MODEL_PATH = r"\Qwen\Qwen2.5-3B-Instruct"
+DATASET_PATH = r"\legal_qa_full.csv"
+OUTPUT_PATH = r"\Qwen\QLoRA_model"
 
 torch.cuda.empty_cache()
 

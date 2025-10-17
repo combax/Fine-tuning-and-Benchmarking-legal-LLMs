@@ -2,7 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
 # Load model and tokenizer
-model_path = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\Qwen2.5-3B-Instruct"
+model_path = r"\Qwen\Qwen2.5-3B-Instruct"
 quantization_config = BitsAndBytesConfig(load_in_4bit=True)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(

@@ -3,9 +3,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
 
 #paths
-base_model_path = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\Qwen2.5-3B-Instruct"
-#best_checkpoint_path = r"G:\LLM-fine-tuning-LinkedIn-Post\outputs_qlora\checkpoint-450"
-best_checkpoint_path = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\QLoRA_model"
+base_model_path = r"\Qwen\Qwen2.5-3B-Instruct"
+#best_checkpoint_path = r"\outputs_qlora\checkpoint-450"
+best_checkpoint_path = r"\Qwen\QLoRA_model"
 
 quantization_config = BitsAndBytesConfig(load_in_4bit=True)
 tokenizer = AutoTokenizer.from_pretrained(base_model_path)

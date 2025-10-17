@@ -15,12 +15,12 @@ os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 transformers.logging.set_verbosity_error()
 
 #paths
-repo_base_dir = r"G:\LLM-fine-tuning-LinkedIn-Post\legalbench"
-data_base_dir = r"G:\LLM-fine-tuning-LinkedIn-Post\legalbench_dataset\data"
+repo_base_dir = r"\legalbench"
+data_base_dir = r"\legalbench_dataset\data"
 
 #fine-tuned paths
-base_model_path = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\Qwen2.5-3B-Instruct" #base model
-qlora_path = r"G:\LLM-fine-tuning-LinkedIn-Post\Qwen\Standard_LoRA_model" #replace with QLoRA/LoRA as required
+base_model_path = r"\Qwen\Qwen2.5-3B-Instruct" #base model
+qlora_path = r"\Qwen\Standard_LoRA_model" #replace with QLoRA/LoRA as required
 
 #output
 output_path = os.path.join(repo_base_dir, "qlora_high_performer_results_3B_4bit.json")
